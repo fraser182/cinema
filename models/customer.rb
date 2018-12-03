@@ -94,7 +94,7 @@ class Customer
   # Update customers funds by buying a ticket
   def buy_ticket(film) # Update customer1.buy_tickets(film1)
     sql = "UPDATE customers SET funds = $1 WHERE id = $2"
-    funds = @funds - film.price.to_i
+    funds = @funds - film.price
     values = [funds, @id]
     result = SqlRunner.run(sql, values)
   end
