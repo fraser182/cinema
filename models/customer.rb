@@ -91,7 +91,7 @@ class Customer
     return customer
   end
 
-  # Gives a LIST of the customers going to see a certain film
+  # Update customers funds by buying a ticket
   def buy_ticket(film) # Update customer1.buy_tickets(film1)
     sql = "UPDATE customers SET funds = $1 WHERE id = $2"
     funds = @funds - film.price.to_i
