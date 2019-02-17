@@ -18,6 +18,13 @@ It's enough if you can call your methods in pry, don't worry about an interface.
 -   Tickets
     -   customer_id
     -   film_id
+    
+### Setup
+```
+createdb cinema 
+psql -d cinema -f db/cinema.sql 
+ruby console.rb
+```
 
 ### Your app should be able to:
 
